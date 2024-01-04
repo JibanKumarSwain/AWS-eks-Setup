@@ -49,8 +49,11 @@ Key for this user.
 6) Configure the AWS CLI with the Access Key and Secret Access Key from 
 
 # step 2:
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o 
-"awscliv2.zip"
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 sudo apt install unzip
+
 unzip awscliv2.zip
+
 sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --updat
