@@ -57,3 +57,38 @@ sudo apt install unzip
 unzip awscliv2.zip
 
 sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --updat
+
+## AMAZON ELASTIC KUBERNETES SERVICE (EKS) NOTES
+# 7) Kubernetes tools setup:
+   # aws configure
+ Install kubectl:
+url -o kubectl https://amazon-eks.s3.us-west2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl 
+
+chmod +x ./kubectl
+
+sudo mv ./kubectl /usr/local/bin
+
+kubectl version --short –client
+# we can use this link for Documention(https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+ Install eksctl:
+curl --silent --location 
+"https://github.com/weaveworks/eksctl/releases/latest/download/
+eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+sudo mv /tmp/eksctl /usr/local/bin
+
+eksctl version
+
+# 8) EKS Cluster Setup:
+
+ Use eksctl to create the EKS cluster
+
+# NOTE: Make sure to replace <cluster-name> and <region> with your desired values
+
+eksctl create cluster --name <cluster-name> --region <region> --node-type 
+t2.micro --nodes-min 2 --nodes-max 2
+
+ Update your kubeconfig to connect to the newly created EKS cluster:
+
+# 9) Verify Nodes:
