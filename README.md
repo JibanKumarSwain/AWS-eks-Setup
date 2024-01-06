@@ -91,4 +91,4 @@ t2.micro --nodes-min 2 --nodes-max 2
 
  Update your kubeconfig to connect to the newly created EKS cluster:
 
-# 9) Verify Nodes:
+
