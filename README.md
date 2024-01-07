@@ -113,7 +113,7 @@ kubectl apply -f <yaml-file>
 
 5. Scale a Deployment
 
- kubectl scale deployment <deployment-name> --replicas=<number>
+ kubectl scale deployment < deployment-name> --replicas=<number>
  
 6. View Pods in a Namespace
 
