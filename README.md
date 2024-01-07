@@ -107,32 +107,32 @@ aws eks describe-cluster --name <cluster-name> --region <region>
 
 kubectl get nodes
 
-4. Deploy an application
+3. Deploy an application
 
 kubectl apply -f <yaml-file>
 
-5. Scale a Deployment
+4. Scale a Deployment
 
  kubectl scale deployment < deployment-name> --replicas=<number>
  
-6. View Pods in a Namespace
+5. View Pods in a Namespace
 
 kubectl get pods -n <namespace>
 
-7. Check Cluster Events
+6. Check Cluster Events
 
 kubectl get events
 
-9. Create a Persistent Volume
+7. Create a Persistent Volume
 
 kubectl apply -f <pv-definition.yaml>
 
-11. Apply a Rolling Update
+8. Apply a Rolling Update
 
-kubectl set image deployment/<deployment-name> <container-name>=<new-image>
+kubectl set image deployment/< deployment-name> <container-name>=<new-image>
 
-13. Enable Autoscaling
+9. Enable Autoscaling
 
-kubectl autoscale deployment <deployment-name> --min=3 --max=5
+kubectl autoscale deployment < deployment-name> --min=3 --max=5
 
 
