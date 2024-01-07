@@ -92,6 +92,7 @@ t2.micro --nodes-min 2 --nodes-max 2
  Update your kubeconfig to connect to the newly created EKS cluster:
 
 # 9) Verify Nodes:
+
 kubectl get nodes
 
 # AMAZON ELASTIC KUBERNETES SERVICE (EKS) NOTES
@@ -99,30 +100,39 @@ kubectl get nodes
 Basic to Advanced EKS Commands 
 
 1. Get Cluster Information
+
 aws eks describe-cluster --name <cluster-name> --region <region>
 
 2. List Worker Nodes
+
 kubectl get nodes
 
 4. Deploy an application
+
 kubectl apply -f <yaml-file>
 
 5. Scale a Deployment
+
  kubectl scale deployment <deployment-name> --replicas=<number>
  
 6. View Pods in a Namespace
+
 kubectl get pods -n <namespace>
 
 7. Check Cluster Events
+
 kubectl get events
 
 9. Create a Persistent Volume
+
 kubectl apply -f <pv-definition.yaml>
 
 11. Apply a Rolling Update
+
 kubectl set image deployment/<deployment-name> <container-name>=<newimage>
 
 13. Enable Autoscaling
+
 kubectl autoscale deployment <deployment-name> --min=3 --max=
 
 
