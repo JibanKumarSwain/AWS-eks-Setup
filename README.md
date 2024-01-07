@@ -129,7 +129,7 @@ kubectl apply -f <pv-definition.yaml>
 
 11. Apply a Rolling Update
 
-kubectl set image deployment/<deployment-name> <container-name>=<newimage>
+kubectl set image deployment/<deployment-name> <container-name>=<new-image>
 
 13. Enable Autoscaling
 
