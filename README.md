@@ -133,6 +133,6 @@ kubectl set image deployment/<deployment-name> <container-name>=<newimage>
 
 13. Enable Autoscaling
 
-kubectl autoscale deployment <deployment-name> --min=3 --max=
+kubectl autoscale deployment <deployment-name> --min=3 --max=5
 
 
