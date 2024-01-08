@@ -148,4 +148,8 @@ kubectl set image deployment/< deployment-name> <container-name>=<new-image>
 
 kubectl autoscale deployment < deployment-name> --min=3 --max=5
 
+10. Delete the cluster
+eksctl delete cluster --name <cluster-name> --region <region-name>
+
+
 
