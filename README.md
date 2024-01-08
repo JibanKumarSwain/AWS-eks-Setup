@@ -38,15 +38,22 @@ COMMANDS:
  Create an IAM role with the necessary permissions for EKS.
 STEPS:
 1. Create an IAM User:
-o Go to the AWS IAM console.
-o Create a new IAM user named "eks-admin."
-o Attach the "AdministratorAccess" policy to this user.
+
+* Go to the AWS IAM console.
+
+* Create a new IAM user named "eks-admin."
+
+* Attach the "AdministratorAccess" policy to this user.
+
 2. Create Security Credentials:
-o After creating the user, generate an Access Key and Secret Access 
+
+* After creating the user, generate an Access Key and Secret Access 
 Key for this user.
-4) Launch AWS instance and get access to the instance
-5) Configure AWS CLI:
-6) Configure the AWS CLI with the Access Key and Secret Access Key from 
+# 4) Launch AWS instance and get access to the instance
+# 5) Configure AWS CLI:
+# 6) Configure the AWS CLI with the Access Key and Secret Access Key from 
+
+
 
 # step 2:
 
@@ -56,19 +63,25 @@ sudo apt install unzip
 
 unzip awscliv2.zip
 
-sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --updat
+sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
+
+$Error <If you're encountering an error at this stage, it may indicate an installation issue on your system, potentially related to the unzip package. To resolve this, you can install the unzip package using the command 'sudo apt-get install unzip">
 
 ## AMAZON ELASTIC KUBERNETES SERVICE (EKS) NOTES
+
 # 7) Kubernetes tools setup:
+aws configure
+
    # aws configure
  Install kubectl:
-url -o kubectl https://amazon-eks.s3.us-west2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl 
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.28.3/2023-11-14/bin/linux/amd64/kubectl
 
 chmod +x ./kubectl
 
 sudo mv ./kubectl /usr/local/bin
 
 kubectl version --short –client
+
 # we can use this link for Documention(https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
 
  Install eksctl:
