@@ -86,7 +86,7 @@ sudo mv ./kubectl /usr/local/bin
 
 kubectl version --short –client
 
-# we can use this link for Documention(https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+## we can use this link for Documention(https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
 
  Install eksctl:
 curl --silent --location 
