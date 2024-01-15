@@ -1,7 +1,6 @@
 # AWS-eksctl
 
 
-
 ## AMAZON ELASTIC KUBERNETES SERVICE (EKS) NOTES
 # What is Amazon EKS?
 
