@@ -34,6 +34,7 @@ applications
 
  Install and configure the AWS Command Line Interface (CLI) on your 
 local.
+
 COMMANDS:
 
 # 3) Create an IAM Role for EKS
