@@ -52,6 +52,7 @@ STEPS:
 
 * After creating the user, generate an Access Key and Secret Access 
 Key for this user.
+
 # 4) Launch AWS instance and get access to the instance
 # 5) Configure AWS CLI:
 # 6) Configure the AWS CLI with the Access Key and Secret Access Key from 
